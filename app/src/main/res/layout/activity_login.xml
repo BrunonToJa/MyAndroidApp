@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ZAWARTOŚĆ LOGOWANIA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nazwa"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zaloguj się, aby kontynuować"
+            android:textSize="16sp"
+            android:textColor="#B0B0B0"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Google - biały -->
+        <Button
+            android:id="@+id/btnGoogleLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="   Zaloguj przez Google"
+            android:textColor="#757575"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:drawableLeft="@drawable/ic_google"
+            android:paddingStart="24dp"
+            android:paddingEnd="16dp"/>
+
+        <!-- Kraken - fioletowy -->
+        <Button
+            android:id="@+id/btnKrakenLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#5741D9"
+            android:text="Zaloguj przez Kraken"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:drawableLeft="@drawable/ic_kraken"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="300dp"
+            android:text="Logując się, akceptujesz regulamin"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

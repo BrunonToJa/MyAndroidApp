@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyBussines</string>
+    <string-array name="account_types">
+        <item>Maklerskie</item>
+        <item>Kryptowaluty</item>
+        <item>Forex</item>
+    </string-array>
+</resources>

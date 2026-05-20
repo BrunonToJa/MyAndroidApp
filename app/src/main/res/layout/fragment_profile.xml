@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp">
+
+<!-- GÓRNY PASEK -->
+<include
+    layout="@layout/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"/>
+
+<!-- GUZIK BROKERZY - FIOLETOWY -->
+<Button
+    android:id="@+id/btnBrokers"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_marginTop="28dp"
+    android:backgroundTint="#5741D9"
+    android:text="Brokerzy"
+    android:textColor="#FFFFFF"
+    android:textAllCaps="false"
+    android:textSize="16sp"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"/>
+
+<!-- GUZIK WŁASNY WYKRES - ZIELONY -->
+<Button
+    android:id="@+id/btnCustomChart"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_marginTop="12dp"
+    android:backgroundTint="#10B981"
+    android:text="Dodaj dane"
+    android:textColor="#FFFFFF"
+    android:textAllCaps="false"
+    android:textSize="16sp"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"/>
+
+<!-- GUZIK WYLOGUJ - CZERWONY -->
+<Button
+    android:id="@+id/btnLogout"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_marginTop="12dp"
+    android:backgroundTint="#DC2626"
+    android:text="Wyloguj"
+    android:textColor="#FFFFFF"
+    android:textAllCaps="false"
+    android:textSize="16sp"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"/>
+
+</LinearLayout>

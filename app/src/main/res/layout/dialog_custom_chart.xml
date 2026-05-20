@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1A1A1A">
+
+    <!-- Nazwa -->
+    <EditText
+        android:id="@+id/etStockName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#2A2A2A"
+        android:textColor="#FFFFFF"
+        android:hint="Nazwa akcji (np. AAPL)"
+        android:textColorHint="#666666"
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Data otwarcia -->
+    <EditText
+        android:id="@+id/etOpenDate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#2A2A2A"
+        android:textColor="#FFFFFF"
+        android:hint="Data otwarcia"
+        android:textColorHint="#666666"
+        android:paddingHorizontal="12dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Cena otwarcia -->
+    <EditText
+        android:id="@+id/etOpenPrice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#2A2A2A"
+        android:textColor="#FFFFFF"
+        android:hint="Cena otwarcia"
+        android:textColorHint="#666666"
+        android:paddingHorizontal="12dp"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- GUZIK CIĄGLE OTWARTE -->
+    <CheckBox
+        android:id="@+id/cbStillOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciągle otwarte"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Data zamknięcia (ukryta jeśli ciągle otwarte) -->
+    <EditText
+        android:id="@+id/etCloseDate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#2A2A2A"
+        android:textColor="#FFFFFF"
+        android:hint="Data zamknięcia"
+        android:textColorHint="#666666"
+        android:paddingHorizontal="12dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Cena zamknięcia (ukryta jeśli ciągle otwarte) -->
+    <EditText
+        android:id="@+id/etClosePrice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#2A2A2A"
+        android:textColor="#FFFFFF"
+        android:hint="Cena zamknięcia (lub aktualna)"
+        android:textColorHint="#666666"
+        android:paddingHorizontal="12dp"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Typ konta -->
+    <Spinner
+        android:id="@+id/spinnerAccountType"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#2A2A2A"/>
+
+</LinearLayout>
