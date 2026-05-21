@@ -23,3 +23,8 @@ debug/
 sessions/
 *.keystore
 *.jks
+.idea/
+app/google-services.json
+app/client_secret*.json
+google-services.json
+client_secret*.json
