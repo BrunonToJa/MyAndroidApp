@@ -61,7 +61,7 @@ class PositionAdapter(
             val profitPercent = if (item.openPrice > 0) {
                 ((item.closePrice - item.openPrice) / item.openPrice * 100)
             } else 0f
-            val profitText = "${if (profitPercent >= 0) "+" else ""}${profitPercent.toInt()}%"
+            val profitText = "${if (profitPercent >= 0) "+" else ""}${"%.2f".format(profitPercent)}%"
             holder.tvProfit.text = profitText
             holder.tvProfit.setTextColor(
                 if (profitPercent >= 0) 0xFF10B981.toInt() else 0xFFEF4444.toInt()

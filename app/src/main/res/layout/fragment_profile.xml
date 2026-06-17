@@ -7,18 +7,30 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 android:padding="16dp">
 
-<!-- GÓRNY PASEK -->
-<include
-    layout="@layout/top_bar"
-    android:layout_width="match_parent"
-    android:layout_height="72dp"/>
+    <!-- TYTUŁ -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ustawienia"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wprowadź dane i inne"
+        android:textColor="#B0B0B0"
+        android:textSize="14sp"
+        android:layout_marginBottom="18dp"/>
 
 <!-- GUZIK BROKERZY - FIOLETOWY -->
 <Button
     android:id="@+id/btnBrokers"
     android:layout_width="match_parent"
     android:layout_height="56dp"
-    android:layout_marginTop="28dp"
+    android:layout_marginTop="14dp"
     android:backgroundTint="#5741D9"
     android:text="Brokerzy"
     android:textColor="#FFFFFF"
@@ -33,7 +45,6 @@ android:padding="16dp">
     android:id="@+id/btnCustomChart"
     android:layout_width="match_parent"
     android:layout_height="56dp"
-    android:layout_marginTop="12dp"
     android:backgroundTint="#10B981"
     android:text="Dodaj dane"
     android:textColor="#FFFFFF"
@@ -48,7 +59,6 @@ android:padding="16dp">
     android:id="@+id/btnLogout"
     android:layout_width="match_parent"
     android:layout_height="56dp"
-    android:layout_marginTop="12dp"
     android:backgroundTint="#DC2626"
     android:text="Wyloguj"
     android:textColor="#FFFFFF"
