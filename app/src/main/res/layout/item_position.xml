@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardPosition"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="8dp"
@@ -33,7 +34,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="2024-01-01\n- 2024-02-01"
+            android:text="2024-01-01
+- 2024-02-01"
             android:textColor="#B0B0B0"
             android:textSize="12sp"
             android:gravity="center"/>
@@ -44,7 +46,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
-            android:text="1500\n1800"
+            android:text="1500
+1800"
             android:textColor="#FFFFFF"
             android:textSize="12sp"
             android:gravity="center"/>

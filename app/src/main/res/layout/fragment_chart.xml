@@ -7,6 +7,47 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- GÓRNY PASEK: TYTUŁ + OGÓLNY ZYSK -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Twoje pozycje"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ogólny zysk"
+                android:textColor="#B0B0B0"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvTotalProfit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+0%"
+                android:textColor="#10B981"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
     <!-- GÓRNY PASEK (include) -->
     <include
         layout="@layout/top_bar"
