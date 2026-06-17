@@ -479,7 +479,7 @@ class DocumentsFragment : Fragment() {
             0f
         }
 
-        val profitText = "${if (profitPercent >= 0f) "+" else ""}${"%.1f".format(profitPercent)}%"
+        val profitText = "${if (profitPercent >= 0f) "+" else ""}${"%.2f".format(profitPercent)}%"
 
         tvTotalProfit.text = profitText
 

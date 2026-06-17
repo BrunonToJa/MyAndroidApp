@@ -1,13 +1,18 @@
 package com.example.mybussines.fragments
 
 import android.graphics.Color
+import android.graphics.RenderEffect
+import android.graphics.Shader
 import android.graphics.Typeface
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.annotation.RequiresApi
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.example.mybussines.R
 import java.text.SimpleDateFormat
@@ -32,28 +37,34 @@ class HomeFragment : Fragment() {
 
     private val monthFormat = SimpleDateFormat("yyyy-MM", Locale.getDefault())
 
+    @RequiresApi(Build.VERSION_CODES.S)
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_home, container, false)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         tvHeaderProfit = view.findViewById(R.id.tvHeaderProfit)
-
         tvTotalEntry = view.findViewById(R.id.tvTotalEntry)
         tvTotalClose = view.findViewById(R.id.tvTotalClose)
         tvTotalProfit = view.findViewById(R.id.tvTotalProfit)
         tvTotalPercent = view.findViewById(R.id.tvTotalPercent)
-
         tvEmptyMonthly = view.findViewById(R.id.tvEmptyMonthly)
         monthlyContainer = view.findViewById(R.id.monthlyContainer)
 
+        // EFEKT ROZMYCIA (blur) jak w ChartFragment
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            val bg1 = view.findViewById<CardView>(R.id.glassCardBgHome1)
+            val bg2 = view.findViewById<CardView>(R.id.glassCardBgHome2)
+
+            val blurEffect = RenderEffect.createBlurEffect(20f, 20f, Shader.TileMode.CLAMP)
+            bg1?.setRenderEffect(blurEffect)
+            bg2?.setRenderEffect(blurEffect)
+        }
+
         loadStatistics()
+        return view
     }
 
     override fun onResume() {
